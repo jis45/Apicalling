@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:backgroundTint="@color/mint_cream"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <RelativeLayout
+            android:id="@+id/appbar"
+            android:background="@color/mint_cream"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:elevation="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/names"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/cancelphoto"
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:src="@drawable/cross" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/you_must_fill_in_your_full_name_so_the_person_receiving_the_message_or_call_known_its_you_who_sent_it"
+                android:padding="10dp"
+                android:textColor="@color/dim_gray"
+                android:textSize="15sp"
+
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/name"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="5dp"
+                app:boxCornerRadiusBottomStart="5dp"
+                app:boxCornerRadiusTopEnd="5dp"
+                app:boxCornerRadiusTopStart="5dp"
+                app:boxStrokeColor="@color/textcolor"
+                app:helperTextEnabled="true"
+                app:hintTextColor="@color/textcolor"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp"
+                    android:imeOptions="actionGo"
+                   />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_id_Upload"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:elevation="40dp"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:textColor="@color/black"
+                android:background="@drawable/update"
+                android:textAllCaps="false">
+            </androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

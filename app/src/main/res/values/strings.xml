@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Call</string>
+    <string name="email">Email</string>
+    <string name="name">FullName</string>
+    <string name="number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="login">Login</string>
+    <string name="signup">signup</string>
+
+    <string name="pref_file" translatable="false">com.jishnu.preference_file</string>
+    <string name="pref_token" translatable="false">com.jishnu.pref_token</string>
+    <string name="pref_language" translatable="false">com.jishnu.pref_language</string>
+    <string name="call">calls</string>
+    <string name="search">search</string>
+    <string name="notification">notification</string>
+    <string name="Profile">profile</string>
+    <string name="update">Update</string>
+    <string name="photo">Photo</string>
+    <string name="names">Name</string>
+    <string name="you_must_fill_in_your_full_name_so_the_person_receiving_the_message_or_call_known_its_you_who_sent_it">You must fill in your full name so the person receiving the message or call known its you who sent it.</string>
+
+
+</resources>
